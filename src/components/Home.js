@@ -8,15 +8,29 @@ display:flex;
 flex-direction: row;
 flex-wrap: wrap;
 margin-top:10%;
+`;
+
+const TextInfo = styled.h2`
+color: darkgrey;
+font-family: sans-serif;
+text-align: center;
+`;
+
+const Browse = styled.h3`
+color: darkgrey;
+font-family: sans-serif;
+text-align:center;
 `
+
+
 
 const Home = (props) => {
     let itemList = Object.values(items);
     
     return (
         <div>
-        <h2>Fruit emporium sells the finest fruits from this world and beyond.</h2>
-        <h3>Browse items:</h3>
+        <TextInfo>Fruit emporium sells the finest fruits from this world and beyond.</TextInfo>
+        <Browse>Browse items:</Browse>
         <ListingGridWrapper>
             <ListingGrid itemList={itemList}/>
         </ListingGridWrapper>

@@ -15,7 +15,7 @@ const App = (props) => {
       <Switch>
         <Route path='/homepage'><Home/></Route>
         <Route path='/About'><About/></Route>
-        <Route path='/items/:itemId'></Route>
+        <Route path='/items/:itemId'><ItemDetails/></Route>
       </Switch>
     </Router>
   )
