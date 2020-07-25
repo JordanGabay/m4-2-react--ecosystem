@@ -23,6 +23,7 @@ display: flex;
 const ContainerBox = styled.div`
 margin-top:10%;
 font-family:sans-serif;
+margin-left: 250px;
 `
 
 const StyleImage = styled.img`
@@ -36,7 +37,8 @@ const FruitLatin = styled.h4`
 color:darkgrey;
 `
 const FruitDescription = styled.p`
-font-size:12px;
+font-size:15px;
+width: 70%;
 `
 const CountryOf = styled.p`
 font-style:italic;

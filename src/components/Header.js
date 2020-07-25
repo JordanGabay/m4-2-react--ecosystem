@@ -1,6 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
+
 
 const Navbar = styled.nav`
 display:flex;
@@ -29,7 +30,10 @@ a {
     text-decoration:none;
 }
 
-
+.Navlink {
+    color: purple;
+    border-bottom: 2px solid purple;
+}
 `;
 
 
@@ -38,12 +42,12 @@ const Header = (props) => {
         <Navbar>
         <h1>Fruit Emporium</h1>
         <ul>
-            <Link to='/Homepage'>
+            <NavLink exact to='/Homepage' activeClassName="Navlink">
                 <li>Home</li>
-            </Link>
-            <Link to='/about'>
+            </NavLink>
+            <NavLink exact to='/About' activeClassName="Navlink">
                 <li>About</li>
-            </Link>
+            </NavLink>
         </ul>
         </Navbar>
     )
